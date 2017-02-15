@@ -44,9 +44,7 @@ public class TurkishTokenizerWithRegex2 {
              //article=article.replace('ü','u');
              //article=article.replace('ş','s');
                 String[] words = article.replaceAll("[^a-zA-Z-ğüşöçİĞÜŞÖÇ\\s]+", "").toLowerCase().split("\\s+");
-                /*Java regex is can't work in turkish character.
-                Because of this replace all turkish chanacter with similar Latin character and this 
-                is work. Regex should (must,have to) work in turkish character,maybe my fault
+                /*Work fine
                 */
                 for(String s:words) {
                     System.out.println(s);
