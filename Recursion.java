@@ -140,6 +140,27 @@ public String withoutX2(String str) {
             return count7(n / 10);
         }
     }
+   public String zipZap(String str) {
+  StringBuilder build=new StringBuilder();
+  int k=0;
+  if(str.length()==0){
+    return "";
+  }
+  if(str.length()==1){
+    return str;
+  }
+  build.append(str.charAt(0));
+  for(int i=1;i<str.length()-1;i++){
+    if(str.charAt(i+1)=='p'&& str.charAt(i-1)=='z'){
+      k++;
+    }
+    else {
+      build.append(str.charAt(i));
+    }
+  }
+  build.append(str.charAt(str.length()-1));
+  return build.toString();
+}
 
     public static int count8(int n) {
         if (n <= 7) {
