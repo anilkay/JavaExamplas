@@ -30,6 +30,27 @@ public class Recursion {
   for(int i=0;i<n;i++)array[i]=i;
   return array;
 }
+    public boolean haveThree(int[] nums) {
+  ArrayList<Integer> index=new ArrayList<>();
+  int howMany=0;
+  for(int i=0;i<nums.length;i++){
+    if(nums[i]==3){
+      howMany++;
+      index.add(i);
+    }
+  }
+  for(int i=0;i<index.size()-1;i++){
+    int sonuc=index.get(i+1)-index.get(i);
+    if(sonuc==1){
+      return false;
+    }
+  }
+  if(howMany==3){
+    return true;
+  }
+  return false;
+}
+
     public boolean has77(int[] nums) {
   for(int i=0;i<nums.length-1;i++){
     if(nums[i]==7 && nums[i+1]==7)return true;
