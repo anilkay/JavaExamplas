@@ -30,6 +30,21 @@ public class Recursion {
   for(int i=0;i<n;i++)array[i]=i;
   return array;
 }
+    public boolean hasBad(String str) {
+  if(str.length()<=2){
+    return false;
+  }
+  if(str.length()==3){
+    return "bad".equals(str);
+  }
+  if(!"b".equals(str.substring(0,1)) ){
+    if(!"b".equals(str.substring(1,2))){
+      return false;
+    }
+  }
+  return true;
+}
+
     public String comboString(String a, String b) {
   int alen=a.length();
   int blen=b.length();
