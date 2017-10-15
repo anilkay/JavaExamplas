@@ -30,6 +30,17 @@ public class Recursion {
   for(int i=0;i<n;i++)array[i]=i;
   return array;
 }
+    public String comboString(String a, String b) {
+  int alen=a.length();
+  int blen=b.length();
+  if(alen>blen){
+    return b+a+b;
+  }
+  else {
+    return a+b+a;
+  }
+}
+
     public boolean haveThree(int[] nums) {
   ArrayList<Integer> index=new ArrayList<>();
   int howMany=0;
