@@ -44,6 +44,12 @@ public class Recursion {
   }
   return true;
 }
+public String withouEnd2(String str) {
+  if(str.length()<=2){
+    return "";
+  }
+  return str.substring(1,str.length()-1);
+}
 
     public String comboString(String a, String b) {
   int alen=a.length();
