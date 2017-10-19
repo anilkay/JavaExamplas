@@ -39,6 +39,16 @@ public class Recursion {
   }
   return list;
 }
+    public boolean makeBricks(int small, int big, int goal) {
+       int libir=1;
+       int bigbir=5;
+       if(bigbir*big+small*libir<goal)return false;
+       if(big==0 &&libir*small<goal)return false;
+       if(goal%bigbir<=(libir*small))return true;
+       if(small==0 &&goal%bigbir!=0)return false;
+       else return false;
+}
+
     public boolean cigarParty(int cigars, boolean isWeekend) {
   if(cigars<40)return false;
   if((cigars>=40 &&cigars<=60)||isWeekend)return true;
