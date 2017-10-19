@@ -30,6 +30,15 @@ public class Recursion {
   for(int i=0;i<n;i++)array[i]=i;
   return array;
 }
+    public List wordsWithoutList(String[] words, int len) {
+  ArrayList list=new ArrayList();
+  for(String i:words){
+    if(i.length()!=len){
+      list.add(i);
+    }
+  }
+  return list;
+}
     public int wordsCount(String[] words, int len) {
   int howMany=0;
   for(String i: words){
