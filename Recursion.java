@@ -30,6 +30,14 @@ public class Recursion {
   for(int i=0;i<n;i++)array[i]=i;
   return array;
 }
+    public String middleTwo(String str) {
+  int len=str.length();
+  if(len%2==0){
+    return str.substring(len/2-1,len/2+1);
+  }
+  return "";
+}
+
     public String deFront(String str) { 
  String arbi="";
  if(str.charAt(0)=='a' ||str.charAt(0)=='a'){
