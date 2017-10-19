@@ -30,6 +30,15 @@ public class Recursion {
   for(int i=0;i<n;i++)array[i]=i;
   return array;
 }
+    public int wordsCount(String[] words, int len) {
+  int howMany=0;
+  for(String i: words){
+    if(i.length()==len){
+      howMany++;
+    }
+  }
+  return howMany++;
+}
     public String middleTwo(String str) {
   int len=str.length();
   if(len%2==0){
