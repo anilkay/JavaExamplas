@@ -39,6 +39,12 @@ public class Recursion {
   }
   return list;
 }
+    public boolean cigarParty(int cigars, boolean isWeekend) {
+  if(cigars<40)return false;
+  if((cigars>=40 &&cigars<=60)||isWeekend)return true;
+  return false;
+}
+
     public boolean scoresIncreasing(int[] scores) {
   boolean secim=true;
   for(int i=0;i<scores.length-1;i++){
