@@ -39,6 +39,14 @@ public class Recursion {
   }
   return list;
 }
+    public boolean scoresIncreasing(int[] scores) {
+  boolean secim=true;
+  for(int i=0;i<scores.length-1;i++){
+    if(scores[i]>scores[i+1])secim=false;
+  }
+  return secim;
+}
+
     public boolean scores100(int[] scores) {
   boolean sevim=false;
   for(int i=0;i<scores.length-1;i++){
