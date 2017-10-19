@@ -80,7 +80,16 @@ public String withouEnd2(String str) {
     return a+b+a;
   }
 }
-
+public String[] wordsFront(String[] words, int n) {
+  String[] arr=new String[n];
+  if(n==1){
+    return new String[]{words[0]};
+  }
+  for(int i=0;i<n;i++){
+    arr[i]=words[i];
+  }
+  return arr;
+}
     public boolean haveThree(int[] nums) {
   ArrayList<Integer> index=new ArrayList<>();
   int howMany=0;
