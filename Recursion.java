@@ -30,6 +30,17 @@ public class Recursion {
   for(int i=0;i<n;i++)array[i]=i;
   return array;
 }
+    public String deFront(String str) { 
+ String arbi="";
+ if(str.charAt(0)=='a' ||str.charAt(0)=='a'){
+  arbi=arbi+str.charAt(0);
+ }
+  if(str.charAt(1)=='b' ||str.charAt(1)=='b'){
+  arbi=arbi+str.charAt(1);
+ }
+ return arbi+str.substring(2,str.length());
+}
+
     public boolean hasBad(String str) {
   if(str.length()<=2){
     return false;
