@@ -39,6 +39,24 @@ public class Recursion {
   }
   return list;
 }
+    public boolean scores100(int[] scores) {
+  boolean sevim=false;
+  for(int i=0;i<scores.length-1;i++){
+    if(scores[i]==100){
+      if(scores[i+1]!=100){
+       sevim=false;
+      }
+    }
+     if(scores[i]==100){
+      if(scores[i+1]==100){
+       sevim=true;
+       break;
+      }
+    }
+  }
+  return sevim;
+}
+
     public int wordsCount(String[] words, int len) {
   int howMany=0;
   for(String i: words){
