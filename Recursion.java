@@ -329,6 +329,10 @@ public String withoutX2(String str) {
   build.append(str.charAt(str.length()-1));
   return build.toString();
 }
+public List<Integer> doubling(List<Integer> nums) {
+  nums=nums.stream().map(n->n*2).collect(Collectors.toList());
+  return nums;
+}
 
     public static int count8(int n) {
         if (n <= 7) {
