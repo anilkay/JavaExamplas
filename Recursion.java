@@ -39,6 +39,18 @@ public class Recursion {
   }
   return list;
 }
+    
+    public int noTeenSum(int a, int b, int c) {
+  int sum=0;
+  sum+=fixTeen(a);
+    sum+=fixTeen(b);
+      sum+=fixTeen(c);
+      return sum;
+}
+public int fixTeen(int a){
+  if(a>=13 && a<=19 &&a!=15 &&a!=16)return 0;
+  return a;
+}
     public boolean makeBricks(int small, int big, int goal) {
        int libir=1;
        int bigbir=5;
