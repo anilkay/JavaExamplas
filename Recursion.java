@@ -39,7 +39,10 @@ public class Recursion {
   }
   return list;
 }
-    
+    public List<String> noX(List<String> strings) {
+  return strings.stream().map(n->n.replaceAll("x","")).collect(Collectors.toList());
+}
+
     public int noTeenSum(int a, int b, int c) {
   int sum=0;
   sum+=fixTeen(a);
