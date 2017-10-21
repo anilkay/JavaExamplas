@@ -39,6 +39,24 @@ public class Recursion {
   }
   return list;
 }
+    public int maxBlock(String str) {
+  char []et=str.toCharArray();
+  int max=0;
+  int len=str.length();
+  if(len==0)return 0;
+  for(int i=0;i<len-1;i++){
+    int howMany=0;
+    for(int j=i+1;j<len;j++){
+      if(et[i]==et[j])howMany++;
+      else break;
+    }
+    if(howMany>max)max=howMany;
+    howMany=0;
+  }
+  return max+1;
+}
+
+    
     public List<String> noX(List<String> strings) {
   return strings.stream().map(n->n.replaceAll("x","")).collect(Collectors.toList());
 }
