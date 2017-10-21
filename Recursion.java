@@ -42,6 +42,16 @@ public class Recursion {
     public List<String> noX(List<String> strings) {
   return strings.stream().map(n->n.replaceAll("x","")).collect(Collectors.toList());
 }
+public int countCode(String str) {
+  int len=str.length();
+  int howMany=0;
+  for(int i=0;i<len-3;i++){
+    if(str.substring(i,i+2).equals("co")){
+      if(str.charAt(i+3)=='e')howMany++;
+    }
+  }
+  return howMany;
+}
 
     public int noTeenSum(int a, int b, int c) {
   int sum=0;
