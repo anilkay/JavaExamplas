@@ -133,6 +133,17 @@ public int fixTeen(int a){
  }
  return arbi+str.substring(2,str.length());
 }
+    
+public int sumDigits(String str) {
+  int sum=0;
+  for(int i=0;i<str.length();i++){
+   byte b= (byte)str.charAt(i);
+        if(b>=48 &&b<=57){
+          sum+=b-48;
+        }
+  }
+  return sum;
+}
 
     public boolean hasBad(String str) {
   if(str.length()<=2){
