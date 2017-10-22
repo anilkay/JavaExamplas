@@ -589,6 +589,17 @@ public String stringTimes(String str, int n) {
   }
   return str2;
 }
+    public int scoreUp(String[] key, String[] answers) {
+  int len=key.length;
+  int sum=0;
+  for(int i=0;i<len;i++){
+    if(answers[i].charAt(0)=='?' )continue;
+    else if(answers[i].charAt(0)==key[i].charAt(0))sum+=4;
+    else sum-=1;
+  }
+  return sum;
+}
+
 public int max1020(int a, int b) {
   if(a>20 &&b>20){return 0;}
   if(a>b &&a<=20){
