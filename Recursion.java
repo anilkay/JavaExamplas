@@ -39,6 +39,15 @@ public class Recursion {
   }
   return list;
 }
+    public String stringSplosion(String str) {
+  String a="";
+  int j=1;
+  for(int i=0;i<=str.length();i++){
+    a+=str.substring(0,i);
+  }
+  return a;
+}
+
     public int maxBlock(String str) {
   char []et=str.toCharArray();
   int max=0;
