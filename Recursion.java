@@ -47,7 +47,26 @@ public class Recursion {
   }
   return a;
 }
+public int[] make2(int[] a, int[] b) {
+  //return new int[]{3,5};
+  int[]rint=new int[2];
 
+  if(a.length>1){
+    rint[0]=a[0];
+    rint[1]=a[1];
+  }
+  else if(a.length>0 &&b.length>0){
+    rint[0]=a[0];
+    rint[1]=b[0];
+  }
+  else {
+    rint[0]=b[0];
+    rint[1]=b[1];
+  }
+  return rint;
+}
+
+    
     public int maxBlock(String str) {
   char []et=str.toCharArray();
   int max=0;
