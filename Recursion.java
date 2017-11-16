@@ -39,6 +39,22 @@ public class Recursion {
   }
   return list;
 }
+    public boolean endOther(String a, String b) {
+  a=a.toLowerCase();
+  b=b.toLowerCase();
+  int alen=a.length();
+  int blen=b.length();
+  if(alen>blen){
+    return a.substring(alen-blen,alen).equals(b);
+  }
+  else if(alen==blen){
+    return a.equals(b);
+  }
+  else {
+        return b.substring(blen-alen,blen).equals(a);
+  }
+}
+    
     public String stringSplosion(String str) {
   String a="";
   int j=1;
