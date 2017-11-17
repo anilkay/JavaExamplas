@@ -59,8 +59,14 @@ public class Recursion {
     return a+b.substring(blen-alen,blen);
   }
 }
-
-    
+public String repeatFront(String str, int n) {
+  String temp="";
+  int len=str.length();
+  for(int i=0;i<n;i++){
+    temp+=str.substring(0,n-i);
+  }
+  return temp;
+}   
     public boolean endOther(String a, String b) {
   a=a.toLowerCase();
   b=b.toLowerCase();
