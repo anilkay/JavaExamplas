@@ -39,6 +39,15 @@ public class Recursion {
   }
   return list;
 }
+    public String startWord(String str, String word) {
+  if(str.length()<1)return "";
+  if(str.length()<word.length())return "";
+  if(str.substring(1,word.length()).equals(word.substring(1))){
+    return str.substring(0,word.length());
+  }
+  return "";
+}
+    
     public boolean endOther(String a, String b) {
   a=a.toLowerCase();
   b=b.toLowerCase();
