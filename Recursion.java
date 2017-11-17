@@ -83,6 +83,22 @@ public String repeatFront(String str, int n) {
   }
 }
     
+    public String oneTwo(String str) {
+  StringBuilder builder=new StringBuilder();
+  int len=str.length();
+  for(int i=0;i<len;i=i+3){
+    if(i+2<len){
+    String iki="";
+    char uc=str.charAt(i);
+      char bir=str.charAt(i+1);
+       iki=""+str.charAt(i+2);
+      builder.append(""+bir+iki+uc);
+    }
+  }
+  return builder.toString();
+}
+
+    
     public String stringSplosion(String str) {
   String a="";
   int j=1;
