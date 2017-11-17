@@ -47,6 +47,19 @@ public class Recursion {
   }
   return "";
 }
+    public String minCat(String a, String b) {
+  int alen=a.length();
+  int blen=b.length();
+  if(alen==blen)return a+b;
+  if(alen==0 ||blen==0)return "";
+  if(alen>blen){
+    return a.substring(alen-blen,alen)+b;
+  }
+  else {
+    return a+b.substring(blen-alen,blen);
+  }
+}
+
     
     public boolean endOther(String a, String b) {
   a=a.toLowerCase();
