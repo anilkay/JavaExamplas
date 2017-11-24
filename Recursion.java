@@ -47,6 +47,12 @@ public class Recursion {
   }
   return "";
 }
+    public boolean loneTeen(int a, int b) {
+  boolean falan=false;
+  if(a<20 && a>12)falan=!falan;
+  if(b<20 && b>12)falan=!falan;
+   return falan;
+}    
     public String minCat(String a, String b) {
   int alen=a.length();
   int blen=b.length();
